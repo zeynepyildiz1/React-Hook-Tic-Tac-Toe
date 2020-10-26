@@ -4,7 +4,7 @@
 
 Tic Tac Toe oyunu yapmanızı bekliyoruz. Tasarımı size kalmakla birlikte referans olması açısından bir görsel ekledik.
 
-![tic-tac-toe-reference-image](images/tic-tac-toe-reference-image.jpg)
+![tic-tac-toe-reference-image](image/tic-tac-toe-reference-image.jpg)
 
 ## Kurulum
 
