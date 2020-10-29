@@ -1,13 +1,59 @@
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* font: 14px "Century Gothic", Futura, sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 20px;
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #2c3e50, #bdc3c7); */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.square {
+  background: rgb(78, 195, 199);
+  float: left;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 24px;
+  height: 74px;
+  margin-right: -1px;
+  margin-top: -1px;
+  text-align: center;
+  width: 94px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button.squarehighlight {
+  float: left;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 24px;
+  height: 74px;
+  margin-right: -1px;
+  margin-top: -1px;
+  text-align: center;
+  width: 94px;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  background: greenyellow;
+}
+.square:focus {
+  outline: none;
 }
