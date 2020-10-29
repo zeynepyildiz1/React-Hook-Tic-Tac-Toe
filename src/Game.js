@@ -12,7 +12,7 @@ const winner = winningInfo.winner;
 const winnerHighlight = winningInfo.line;
 let status;
 if (winner) {
-  status = "Hurray the winner is " + winner;
+  status = "Winner " + winner;
 } else if (winningInfo.isDraw) {
   status = "It's a Draw";
 } else {
@@ -33,7 +33,8 @@ function renderSquare(i){
     
 }
 return (
-    <div>
+  <div id="outgame">
+    <div id="game">
       <div className="status">{status}</div>
       <div className="board-row">
         {renderSquare(0)}
@@ -50,7 +51,7 @@ return (
         {renderSquare(7)}
         {renderSquare(8)}
       </div>
-    </div>
+    </div></div>
   );
 }
 export default Game
